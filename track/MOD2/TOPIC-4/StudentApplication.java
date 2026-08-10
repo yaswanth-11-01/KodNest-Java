@@ -14,11 +14,11 @@ class Student {
     }
 }
 
-class StudentApplication {
+public class StudentApplication {
 
     public static void main(String[] args) {
         Student s1 = new Student();
-        s1.roll = 026;
+        s1.roll = 26;
         s1.name = "yaswanth";
         s1.height = 6.0;
         System.out.println(s1.roll);
