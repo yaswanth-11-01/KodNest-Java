@@ -26,5 +26,15 @@ public class StudentApplication {
         System.out.println(s1.height);
         s1.run();
         s1.sleep();
+
+        Student s2 = new Student();
+        s2.roll = 28;
+        s2.name = "Ram";
+        s2.height = 6.0;
+        System.out.println(s2.roll);
+        System.out.println(s2.name);
+        System.out.println(s2.height);
+        s2.run();
+        s2.sleep();
     }
 }
