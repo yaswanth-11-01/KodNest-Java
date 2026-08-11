@@ -25,35 +25,34 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
 
-        StudentUtility utility = new StudentUtility();
+            StudentUtility utility = new StudentUtility();
 
-        // Read input
-        int id = scanner.nextInt();
-        scanner.nextLine();
+            // Read input
+            int id = scanner.nextInt();
+            scanner.nextLine();
 
-        String name = scanner.nextLine();
+            String name = scanner.nextLine();
 
-        int javaScore = scanner.nextInt();
-        int sqlScore = scanner.nextInt();
+            int javaScore = scanner.nextInt();
+            int sqlScore = scanner.nextInt();
 
-        // Call methods
-        utility.showReportTitle();
-        utility.displayStudent(id, name);
+            // Call methods
+            utility.showReportTitle();
+            utility.displayStudent(id, name);
 
-        double percentage = utility.calculatePercentage(javaScore, sqlScore);
-        double passingPercentage = utility.getPassingPercentage();
+            double percentage = utility.calculatePercentage(javaScore, sqlScore);
+            double passingPercentage = utility.getPassingPercentage();
 
-        System.out.println("Percentage: " + percentage);
+            System.out.println("Percentage: " + percentage);
 
-        // Final decision in main()
-        if (percentage >= passingPercentage) {
-            System.out.println("Result: PASS");
-        } else {
-            System.out.println("Result: NEEDS IMPROVEMENT");
+            // Final decision in main()
+            if (percentage >= passingPercentage) {
+                System.out.println("Result: PASS");
+            } else {
+                System.out.println("Result: NEEDS IMPROVEMENT");
+            }
         }
-
-        scanner.close();
     }
 }

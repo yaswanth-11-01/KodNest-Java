@@ -9,7 +9,7 @@ class Employee {
     }
 }
 
-class EmpApplication {
+public class EmpApplication {
 
     public static void main(String[] args) {
 
