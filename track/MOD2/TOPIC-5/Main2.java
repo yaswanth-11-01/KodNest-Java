@@ -24,19 +24,18 @@ public class Main2 {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
 
-        // Read the full name and salary
-        String name = scanner.nextLine();
-        double salary = scanner.nextDouble();
+            // Read the full name and salary
+            String name = scanner.nextLine();
+            double salary = scanner.nextDouble();
 
-        // Create one Employee object
-        Employee employee = new Employee();
+            // Create one Employee object
+            Employee employee = new Employee();
 
-        // Call setDetails() and displayDetails()
-        employee.setDetails(name, salary);
-        employee.displayDetails();
-
-        scanner.close();
+            // Call setDetails() and displayDetails()
+            employee.setDetails(name, salary);
+            employee.displayDetails();
+        }
     }
 }
