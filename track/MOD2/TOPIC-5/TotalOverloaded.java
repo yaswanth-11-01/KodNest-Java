@@ -29,5 +29,7 @@ public class TotalOverloaded {
 
         System.out.println("Two-Mark Total: " + twoTotal);
         System.out.println("Three-Mark Total: " + threeTotal);
+
+        scanner.close();
     }
 }

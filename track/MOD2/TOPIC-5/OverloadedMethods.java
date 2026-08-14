@@ -25,5 +25,7 @@ public class OverloadedMethods {
 
         printer.show(number);
         printer.show(word);
+
+        scanner.close();
     }
 }

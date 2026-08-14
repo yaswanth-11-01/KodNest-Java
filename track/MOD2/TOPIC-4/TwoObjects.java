@@ -1,15 +1,15 @@
 
 import java.util.Scanner;
 
-class Student {
-
-    // Declare id, name and javaScore
-    int id;
-    String name;
-    int javaScore;
-}
-
 public class TwoObjects {
+
+    static class Student {
+
+        // Declare id, name and javaScore
+        int id;
+        String name;
+        int javaScore;
+    }
 
     public static void main(String[] args) {
 

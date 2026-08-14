@@ -1,28 +1,28 @@
 
 import java.util.Scanner;
 
-class Student {
-
-    String name;
-
-    void setName(String name) {
-        this.name = name;
-    }
-
-    void showName() {
-        System.out.println("Student Name: " + name);
-    }
-
-    void showScore(int first) {
-        System.out.println("First Score: " + first);
-    }
-
-    void showScore(int first, int second) {
-        System.out.println("Two-Score Total: " + (first + second));
-    }
-}
-
 public class Main5 {
+
+    static class Student {
+
+        String name;
+
+        void setName(String name) {
+            this.name = name;
+        }
+
+        void showName() {
+            System.out.println("Student Name: " + name);
+        }
+
+        void showScore(int first) {
+            System.out.println("First Score: " + first);
+        }
+
+        void showScore(int first, int second) {
+            System.out.println("Two-Score Total: " + (first + second));
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -38,5 +38,7 @@ public class Main5 {
         student.showName();
         student.showScore(first);
         student.showScore(first, second);
+
+        scanner.close();
     }
 }

@@ -34,5 +34,7 @@ public class MethodTypes {
         m.greet(name);
         System.out.println("Lucky Number: " + m.getLuckyNumber());
         System.out.println("Sum: " + m.add(first, second));
+
+        sc.close();
     }
 }

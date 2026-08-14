@@ -1,15 +1,15 @@
 
 import java.util.Scanner;
 
-class Student {
-
-    // Declare registrationId, name and attendancePercentage
-    int registrationId;
-    String name;
-    double attendancePercentage;
-}
-
 public class Main1 {
+
+    static class Student {
+
+        // Declare registrationId, name and attendancePercentage
+        int registrationId;
+        String name;
+        double attendancePercentage;
+    }
 
     public static void main(String[] args) {
 
