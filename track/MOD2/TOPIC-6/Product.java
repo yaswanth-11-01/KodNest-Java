@@ -1,12 +1,10 @@
+import java.util.Scanner;
 
-public import java.util.Scanner;
-
-class Product {
+public class Product {
     String name;
     double price;
 
     Product(String name, double price) {
-
         this.name = name;
         this.price = price;
     }
@@ -15,19 +13,16 @@ class Product {
         System.out.println("Product: " + name);
         System.out.println("Price: " + price);
     }
-}
 
-public class Product {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        
         String name = scanner.nextLine();
         double price = scanner.nextDouble();
-       
-          Product p = new Product(name, price);
+
+        Product p = new Product(name, price);
 
         p.display();
+        scanner.close();
     }
 }
-

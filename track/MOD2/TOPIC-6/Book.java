@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Book {
+public class Book {
     String title;
     String author;
 
@@ -13,9 +13,7 @@ class Book {
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
     }
-}
 
-public class Book {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -23,8 +21,9 @@ public class Book {
         String name = scanner.nextLine();
         String author = scanner.nextLine();
         // Create one Book object
-         Book b = new Book(name, author);
+        Book b = new Book(name, author);
         // Call display()
         b.display();
+        scanner.close();
     }
 }
