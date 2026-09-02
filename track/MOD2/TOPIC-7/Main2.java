@@ -4,7 +4,7 @@ public class Main2 {
         int correctionIndex = 2;
         int correction = 3;
         System.out.println("Reading count: " + readings.length);
-        System.out.println("Before correction: " + readings[correctionIndex]);      
+        System.out.println("Before correction: " + readings[correctionIndex]);
         readings[correctionIndex] += correction;
         System.out.println("After correction: " + readings[correctionIndex]);
         System.out.println("Last valid index: " + (readings.length - 1));

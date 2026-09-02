@@ -13,9 +13,10 @@ public class Main3 {
         System.out.println("Array Elements are :");
         for (int i = 0; i <= 2; i++) {
             for (int j = 0; j <= 4; j++) {
-                System.out.print(a[i] + " ");
-                }
-                System.out.println();
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
         }
+        sc.close();
     }
 }
